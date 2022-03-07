@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="ResumeBlog.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="name">Ezekiel Jim Lowell</h2>
+        <div class="dropDown">
+            <button type="button" class="academicDropDown">Academic</button>
+            <button type="button">Skills</button>
+            <button type="button">Experience</button>
+            <button type="button">Interests</button>
+        </div>
+    </header>
+    <div>
+        <div class="academic">
+            <span><button>School</button></span>
+            <span><button>College</button></span>
+        </div>
+        <div class="skills">
+            <span><button type="button">Win SCP</button></span>
+            <span><button type="button">SAP</button></span>
+            <span><button type="button">HTML</button></span>
+            <span><button type="button">CSS</button></span>
+            <span><button type="button">JavaScript</button></span>
+            <span><button type="button">React JS</button></span>
+        </div>
+        <div class="previousCompanies">
+            <span><button type="button">TAFE</button></span>
+            <span><button type="button">SrinSoft</button></span>
+        </div>
+        <div class="interests">
+            <button type="button">Interest</button>
+        </div>
+    </div>
+
+    <div class="school">
+        <div class="governmentSchool">
+            I have studied in government school upto 10th standard. School has playgrounds inside school compound and
+            separately.
+            It is located in Madambakkam.
+            I have played many games. some of the games are kabbadi, koko.
+            I have got 482 out of 500 in 10th standard.Teachers are leniant.
+        </div>
+        <div class="matriculationSchool">
+            I have studied 11<sup>th</sup> and 12<sup>th</sup> standard in Zion matriculation school.
+            It is located in Indira nagar near Selaiyur.
+            I have got 928 out of 1200 in 12<sup>th</sup> standard.
+        </div>
+    </div>
+    <p class="college">
+        I had done Batchelor of Engineering in Agni colleage of technology located in Thalambur near Navalur.
+        College arranged for Industrial visit to Sriharikota. I had seen two launch pads, more control rooms and
+        mechanical shed. There are many checkposts in between the building structures. My CGPA is 7.43
+    </p>
+    <p class="winScp">
+        Win SCP is a software used to monitor files by using Secured File Transfer Protocol(SFTP).
+        It is used to check files transferred from SAP server to Dealer Management System and viceversa.
+    </p>
+    <p class="SAP">
+        SAP stands for Systems, Applications & Products in Data Processing.
+        It is used to generate files from datas present SAP tables automatically using web methods.
+        Sent the generated files to dealer server. And also receive files from dealer server and post the datas present
+        in files to SAP.
+    </p>
+    <p class="html">
+        HTML is used to display just a content. There are 2 types of tag elements present in HTMl. First one is semantic
+        elements and
+        second is non-semantic elements. Semantic elements has purpose by its names. Examples: header, article, iframe,
+        footer, etc.
+        Non-semantic elements does not have meaning about its content when used. Examples: div and span.
+    </p>
+    <p class="css">
+        CSS stands for Cascading Style Sheet. CSS is used for applying styles and make them as responsive.
+        CSS has many properties includes display, color and background, position, padding, margin, width, border,
+        box-sizing, etc.
+        CSS have priority for elements, classes, id, *(universal selector) and inline styles. * => tag => classes => id
+        => inline styles.
+        * is least priority and inline styles has higher priority.
+        Responsive design given by flex, bootstrap and media queries.
+    </p>
+    <p class="JavaScript">
+        JavaScript is used to add functionality to web elements. There are three main parts in JS.
+    <ol>
+        <li>Synchronous JS</li>
+        <li>Asynchronous JS</li>
+        <li>Window and Document Object Model</li>
+    </ol>
+    Synchronous JS unblocks only when cuurent task is completed. Examples: basic codes, functions, loops, conditions
+    are Synchronous.
+    Asynchronous JS execution starts in parallel without blocking. But execution finishese one by one.
+    Examples of Asynchronous are timers, promises and thenables. Async and await has synchronous behavior but works
+    asynchronously.
+    Await wait for promise to resolve and async function always return promise.
+    Window object have many inbuilt methods such as alert, console, print, prompt, open, etc.
+    By using document object model(DOM), we can take elements, set attributes, text content, append child and also
+    give styles.
+    </p>
+    <p class="reactJs">
+        In Js, accessing DOM is slow when there are many nested elements present in html. So facebook introduced React
+        which uses Virtual DOM.Virtual DOM is a lightweight copy of actual DOM present as JS object in memory. When a
+        state is changed react take snapshot of virtual DOM befor update and then virtual DOM updated. Then react
+        compares
+        the virtual DOM snapshot and updated virtual DOM. This process is called diffing. ReactDOM updates only the
+        changed
+        state without refreshing entire page. Only the changed content is updated. This is called reconciliation.
+
+        React makes use of JSX(JavaScript XML) to write HIML inside JS file of React.
+        There are two types of component in React, Class and Functional components.
+        Before version 16.8, state can be defined and updated using class component only. But in class component, code
+        strcuture is large.
+        So in October 2018 at React conference, react hooks was introduced for to include states in functional
+        components.
+        Then after that code size reduced considerably.
+        Advantages of React are speed, code reusability, easier to debug using React Developer tools.
+    </p>
+
+    <p class="tafe">
+        TAFE(Tractors And Farm Equipment limited) manufactures tractors, parts, store oil and eicher vehicles.
+        I had joined as Project Assinee in Dealer Management System. Two flow of datas needs to be monitored.
+        First one is outflow of data from SAP to dealers: reconciliation of data from SAP to Dealer server for
+        Invoices of tractors and dealers, parts, oil, rollout new dealers, control unit mapping for dealers and workers,
+        pricing and warranty.
+        Second flow from dealer server to SAP: status files such delivery, retail, delivery return, retail return, sale
+        order, purchase order and service invoice files came from dealer server and transferred through SFTP(Secured
+        File Transfer Protocol) and posted to SAP by Remote Function Call(RFC).
+    </p>
+    <p class="srinsoft">
+        I was joined in SrinSoft Technologies in April 1<sup>st</sup> as a Software Trainee. Training was given on JS
+        concepts(synchronous and asynchronous programming) and React JS. In a project called TES-$-pricing, tasks were
+        assigned to me. First task was fetching data from API using React JS for particular coloumns in the tables.
+        Next task was React Popover when a user clicks on a particular elements in the coloumn. Also fetch data to the
+        elements present in popover.
+    </p>
+    <p class="interest">
+        I am interested in listening english songs. My favourites are Allan Walker, Carly Rae Jepson, etc.
+        I am interested in cooking. I know how to make white sauce pasta. 
+
+    <p></p>
+    <p>
+
+    </p>
+
+    <footer>
+        <div>Contact me</div>
+    </footer>
+</body>
+
+</html>

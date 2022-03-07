@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    font-family: Verdana, sans-serif;
+}
+
+.academic {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(8, 26, 34);
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header button {
+    border: none;
+    height: 2.5rem;
+    background-color: rgb(8, 26, 34);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.header .name {
+    color: white;
+    padding-left: 20px;
+}
+
+.header .dropDown {}
+
+.academicDropDown {}
