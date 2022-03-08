@@ -3,8 +3,35 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-.academic {
+.dropContent {
     display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropDownButtons {
+    display: flex;
+}
+
+.dropContent a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropContent a:hover {
+    background-color: rgb(98, 168, 168);
+}
+
+.dropContent a:visited {
+    text-decoration: none;
+}
+
+.show {
+    display: block;
 }
 
 .header {
@@ -12,13 +39,13 @@ body {
     justify-content: space-between;
     background-color: rgb(8, 26, 34);
     align-items: center;
-    box-sizing: border-box;
+    /*max-height: 4rem;*/
 }
 
 .header button {
     border: none;
     height: 2.5rem;
-    background-color: rgb(8, 26, 34);
+    background-color: rgb(5, 31, 43);
     color: white;
     font-weight: bold;
     font-size: medium;
@@ -26,11 +53,44 @@ body {
     padding: 10px;
 }
 
+.header button:hover {
+    background-color: rgb(63, 61, 70);
+}
+
 .header .name {
     color: white;
     padding-left: 20px;
 }
 
-.header .dropDown {}
+.college, .school, .winScp, .sap, .skillHtml, 
+.skillCss, .javaScript, .reactJs, .tafe, .srinsoft, .interest, .project, .skills {
+    display: none;
+}
 
-.academicDropDown {}
+.content {
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.content br {
+    max-height: 10px;
+}
+
+@media only screen and (max-width: 680px) {
+    .header {
+        max-height: 6rem
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header, .dropDownButtons {
+        max-height: 12.5rem;
+    }
+    .dropDownButtons {
+        flex-direction: column;
+    }
+}
