@@ -72,12 +72,25 @@ body {
     margin-right: 8%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: gray;
+    background-color: darkgray;
     border-radius: 5px;
 }
 
-.content br {
-    max-height: 10px;
+.watermark {
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.footer {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(52, 52, 117);
+
 }
 
 @media only screen and (max-width: 680px) {
@@ -92,5 +105,8 @@ body {
     }
     .dropDownButtons {
         flex-direction: column;
+    }
+    .footer {
+        max-width: 550px;
     }
 }
