@@ -50,7 +50,7 @@ body {
     font-size: medium;
     cursor: pointer;
     padding: 10px;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .dropDownButtons button:focus {
