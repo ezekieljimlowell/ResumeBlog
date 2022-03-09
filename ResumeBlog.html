@@ -1,123 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="ResumeBlog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <header class="header">
+    <header class="navbar navbar-dark bg-dark">
         <h2 class="name">Ezekiel Jim Lowell</h2>
         <div class="dropDownButtons">
             <div class="dropDown">
-                <button type="button" onclick="academicButton()" class="dropButton">Academic</button>
+                <button type="button" onclick="academicButton()" class="dropButton btn btn-dark">Academic</button>
                 <div id="academic" class="dropContent">
-                    <span><a onclick="displaySchool()">School</a></span>
-                    <span><a onclick="displayCollege()">College</a></span>
+                    <span><a onclick="displaySchool()" class="dropdown-item">School</a></span>
+                    <span><a onclick="displayCollege()" class="dropdown-item">College</a></span>
                 </div>
             </div>
             <div class="dropDown">
-                <button type="button" onclick="skillButton()" class="dropButton">Skills</button>
+                <button type="button" onclick="skillButton()" class="dropButton btn btn-dark" id="skillDrop">Skills</button>
                 <div id="skills" class="dropContent">
-                    <span><a onclick="displaySkillWinScp()">Win SCP</a></span>
-                    <span><a onclick="displaySkillSap()">SAP</a></span>
-                    <span><a onclick="displaySkillHtml()">HTML</a></span>
-                    <span><a onclick="displaySkillCss()">CSS</a></span>
-                    <span><a onclick="displaySkillJavaScript()">JavaScript</a></span>
-                    <span><a onclick="displaySkillReact()">React JS</a></span>
+                    <span><a onclick="displaySkillWinScp()" class="dropdown-item">Win SCP</a></span>
+                    <span><a onclick="displaySkillSap()" class="dropdown-item">SAP</a></span>
+                    <span><a onclick="displaySkillHtml()" class="dropdown-item">HTML</a></span>
+                    <span><a onclick="displaySkillCss()" class="dropdown-item">CSS</a></span>
+                    <span><a onclick="displaySkillJavaScript()" class="dropdown-item">JavaScript</a></span>
+                    <span><a onclick="displaySkillReact()" class="dropdown-item">React JS</a></span>
                 </div>
             </div>
             <div class="dropDown">
-                <button type="button" onclick="experienceButton()" class="dropButton">Experience</button>
+                <button type="button" onclick="experienceButton()" class="dropButton btn btn-dark" id="experienceDrop">Experience</button>
                 <div id="previousCompanies" class="dropContent">
-                    <span><a onclick="displayCompanyTafe()">TAFE</a></span>
-                    <span><a onclick="displayCompanySrinSoft()">SrinSoft</a></span>
+                    <span><a onclick="displayCompanyTafe()" class="dropdown-item">TAFE</a></span>
+                    <span><a onclick="displayCompanySrinSoft()" class="dropdown-item">SrinSoft</a></span>
                 </div>
             </div>
-            <button type="button" onclick="displayInterest()">Interests</button>
-            <button type="button" onclick="displayProject()">Project</button>
+            <button type="button" onclick="displayInterest()" class="btn btn-dark">Interests</button>
+            <button type="button" onclick="displayProject()" class="btn btn-dark">Project</button>
+            <button type="button" onclick="displayAwards()">Awards</button>
     </header>
 
     </div>
+    <img src="Images/watermark.jpeg" class="watermark" alt="watermark">
     <div>
-        <img src="watermark.jpeg" class="watermark">
         <div class="content">
             <div class="school" id="school">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>School</h4>
                 <div class="governmentSchool">
                     <h5>Upto 10<sup>th</sup></h5>
-                    I have studied in government school upto 10th standard. School has playgrounds inside school compound
-                    and
-                    separately.
-                    It is located in Madambakkam.
-                    I have played many games. some of the games are kabbadi, koko.
-                    I have got 482 out of 500 in 10th standard.Teachers are leniant. I have completed 10<sup>th</sup> on
-                    march 2011.
+                    <p>
+                        I have studied in government school upto 10th standard. School has playgrounds inside school
+                        compound and separately. It is located in Madambakkam.
+                        I have played many games. some of the games are kabbadi, koko.
+                        I have got 482 out of 500 in 10th standard.Teachers are leniant. I have completed
+                        10<sup>th</sup> on
+                        march 2011.
+                    </p>
                 </div>
                 <div class="matriculationSchool">
                     <h5>11<sup>th</sup> and 12<sup>th</sup></h5>
-                    I have studied 11<sup>th</sup> and 12<sup>th</sup> standard in Zion matriculation school.
-                    It is located in Indira nagar near Selaiyur.
-                    I have got 928 out of 1200 in 12<sup>th</sup> standard.
-                    I have completed 12<sup>th</sup> on march 2013
+                    <p>
+                        I have studied 11<sup>th</sup> and 12<sup>th</sup> standard in Zion matriculation school.
+                        It is located in Indira nagar near Selaiyur.
+                        I have got 928 out of 1200 in 12<sup>th</sup> standard.
+                        I have completed 12<sup>th</sup> on march 2013
+                    </p>
                 </div>
-                <pre>                                                                                                </pre>
+                <br>
             </div>
             <div class="college">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>College</h4>
-                I had done Batchelor of Engineering in Agni colleage of technology located in Thalambur near Navalur.
-                College arranged for Industrial visit to Sriharikota. I had seen two launch pads, more control rooms and
-                mechanical shed. There are many checkposts in between the building structures. My CGPA is 7.43.
-                I have completed BE in 2017.
-                <pre>                                                                                                </pre>
+                <p>
+                    I had done Batchelor of Engineering in Agni colleage of technology located in Thalambur near
+                    Navalur. College arranged for Industrial visit to Sriharikota. I had seen two launch pads,
+                    more control rooms and mechanical shed. There are many checkposts in between the building
+                    structures.
+                    My CGPA is 7.43. I have completed BE in 2017.
+                </p>
+                <br>
             </div>
             <div class="skills">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>Skills</h4>
                 <div class="winScp">
                     <h5>Win SCP</h5>
-                    Win SCP is a software used to monitor files by using Secured File Transfer Protocol(SFTP).
-                    It is used to check files transferred from SAP server to Dealer Management System and viceversa.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        Win SCP is a software used to monitor files by using Secured File Transfer Protocol(SFTP).
+                        It is used to check files transferred from SAP server to Dealer Management System(DMS) and DMS
+                        to SAP.
+                    </p>
+                    <br>
                 </div>
                 <div class="sap">
                     <h5>SAP</h5>
-                    SAP stands for Systems, Applications & Products in Data Processing.
-                    It is used to generate files from datas present SAP tables automatically using web methods.
-                    Sent the generated files to dealer server. And also receive files from dealer server and post the datas
-                    present
-                    in files to SAP.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        SAP stands for Systems, Applications & Products in Data Processing.
+                        It is used to generate files from datas present SAP tables automatically using web methods.
+                        Sent the generated files to dealer server. And also receive files from dealer server and post
+                        the datas present in files to SAP.
+                    </p>
+                    <br>
                 </div>
                 <div class="skillHtml">
                     <h5>HTML</h5>
-                    HTML is used to display just a content. There are 2 types of tag elements present in HTMl. First one is
-                    semantic
-                    elements and
-                    second is non-semantic elements. Semantic elements has purpose by its names. Examples: header, article,
-                    iframe,
-                    footer, etc.
-                    Non-semantic elements does not have meaning about its content when used. Examples: div and span.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        HTML is used to display just a content. There are 2 types of tag elements present in HTMl.
+                        First one is semantic elements and second is non-semantic elements.
+                        Semantic elements has purpose by its names. Examples: header, article, iframe, footer, etc.
+                        Non-semantic elements does not have meaning about its content when used. Examples: div and span.
+                    </p>
+                    <br>
                 </div>
                 <div class="skillCss">
                     <h5>CSS</h5>
-                    CSS stands for Cascading Style Sheet. CSS is used for applying styles and make them as responsive.
-                    CSS has many properties includes display, color and background, position, padding, margin, width,
-                    border,
-                    box-sizing, etc.
-                    CSS have priority for elements, classes, id, *(universal selector) and inline styles. * => tag =>
-                    classes =>
-                    id
-                    => inline styles.
-                    * is least priority and inline styles has higher priority.
-                    Responsive design given by flex, bootstrap and media queries.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        CSS stands for Cascading Style Sheet. CSS is used for applying styles and make them as
+                        responsive. CSS has many properties includes display, color and background, position, padding,
+                        margin, width, border, box-sizing, etc. CSS have priority for elements,
+                        classes, id, *(universal selector) and inline styles. * => tag => classes => id
+                        => inline styles. * is least priority and inline styles has higher priority.
+                        Responsive design given by flex, bootstrap and media queries.
+                    </p>
+                    <br>
                 </div>
                 <div class="javaScript">
                     <h5>JavaScript</h5>
@@ -127,118 +137,115 @@
                         <li>Asynchronous JS</li>
                         <li>Window and Document Object Model</li>
                     </ol>
-                    Synchronous JS unblocks only when cuurent task is completed. Examples: basic codes, functions, loops,
-                    conditions
-                    are Synchronous.
-                    Asynchronous JS execution starts in parallel without blocking. But execution finishese one by one.
-                    Examples of Asynchronous are timers, promises and thenables. Async and await has synchronous behavior
-                    but
-                    works
-                    asynchronously.
-                    Await wait for promise to resolve and async function always return promise.
-                    Window object have many inbuilt methods such as alert, console, print, prompt, open, etc.
-                    By using document object model(DOM), we can take elements, set attributes, text content, append child
-                    and
-                    also
-                    give styles.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        Synchronous JS unblocks only when cuurent task is completed. Examples: basic codes, functions,
+                        loops, conditions are Synchronous. Asynchronous JS execution starts in parallel without
+                        blocking. But execution finishese one by one. Examples of Asynchronous are timers,
+                        promises and thenables. Async and await has synchronous behavior but works asynchronously.
+                        Await wait for promise to resolve and async function always return promise.
+                        Window object have many inbuilt methods such as alert, console, print, prompt, open, etc.
+                        By using document object model(DOM), we can take elements, set attributes, text content, append
+                        child and also give styles.
+                    </p>
+                    <br>
                 </div>
                 <div class="reactJs">
                     <h5>React JS</h5>
-                    In Js, accessing DOM is slow when there are many nested elements present in html. So facebook introduced
-                    React
-                    which uses Virtual DOM.Virtual DOM is a lightweight copy of actual DOM present as JS object in memory.
-                    When
-                    a
-                    state is changed react take snapshot of virtual DOM befor update and then virtual DOM updated. Then
-                    react
-                    compares
-                    the virtual DOM snapshot and updated virtual DOM. This process is called diffing. ReactDOM updates only
-                    the
-                    changed
-                    state without refreshing entire page. Only the changed content is updated. This is called
-                    reconciliation.
-    
-                    React makes use of JSX(JavaScript XML) to write HIML inside JS file of React.
-                    There are two types of component in React, Class and Functional components.
-                    Before version 16.8, state can be defined and updated using class component only. But in class
-                    component,
-                    code
-                    strcuture is large.
-                    So in October 2018 at React conference, react hooks was introduced for to include states in functional
-                    components.
-                    Then after that code size reduced considerably.
-                    Advantages of React are speed, code reusability, easier to debug using React Developer tools.
-                    <pre>                                                                                                </pre>
+                    <p>
+                        In Js, accessing DOM is slow when there are many nested elements present in html. So facebook
+                        introduced React which uses Virtual DOM.Virtual DOM is a lightweight copy of actual DOM
+                        present as JS object in memory. When a state is changed react take snapshot of virtual DOM befor
+                        update and then virtual DOM updated. Then react compares the virtual DOM snapshot and updated
+                        virtual DOM. This process is called diffing. ReactDOM updates only the changed state without
+                        refreshing entire page. Only the changed content is updated. This is called reconciliation.
+                        React makes use of JSX(JavaScript XML) to write HIML inside JS file of React.
+                        There are two types of component in React, Class and Functional components.
+                        Before version 16.8, state can be defined and updated using class component only. But in class
+                        component, code strcuture is large. So in October 2018 at React conference, react hooks
+                        was introduced for to include states in functional components.
+                        Then after that code size reduced considerably. Advantages of React are speed, code reusability,
+                        easier to debug using React Developer tools.
+                    </p>
+                    <br>
                 </div>
             </div>
             <div class="tafe">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>TAFE</h4>
-                TAFE(Tractors And Farm Equipment limited) manufactures tractors, parts, store oil and eicher vehicles.
-                I had joined as Project Assinee in Dealer Management System. Two flow of datas needs to be monitored.
-                First one is outflow of data from SAP to dealers: reconciliation of data from SAP to Dealer server for
-                Invoices of tractors and dealers, parts, oil, rollout new dealers, control unit mapping for dealers and
-                workers,
-                pricing and warranty.
-                Second flow from dealer server to SAP: status files such delivery, retail, delivery return, retail return,
-                sale
-                order, purchase order and service invoice files came from dealer server and transferred through SFTP(Secured
-                File Transfer Protocol) and posted to SAP by Remote Function Call(RFC).
-                <pre>                                                                                                </pre>
+                <p>
+                    TAFE(Tractors And Farm Equipment limited) manufactures tractors, parts, store oil and eicher
+                    vehicles. I had joined as Project Assinee in Dealer Management System.
+                    Two flow of datas needs to be monitored. First one is outflow of data from SAP to dealers:
+                    reconciliation of data from SAP to Dealer server for Invoices of tractors and dealers,
+                    parts, oil, rollout new dealers, control unit mapping for dealers and workers,
+                    pricing and warranty. Second flow from dealer server to SAP: status files such delivery,
+                    retail, delivery return, retail return, sale order, purchase order and
+                    service invoice files came from dealer server and transferred through
+                    SFTP(Secured File Transfer Protocol) and posted to SAP by Remote Function Call(RFC).
+                </p>
+                <br>
             </div>
             <div class="srinsoft">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>SrinSoft</h4>
-                I was joined in SrinSoft Technologies in April 1<sup>st</sup> as a Software Trainee. Training was given on
-                JS
-                concepts(synchronous and asynchronous programming) and React JS. In a project called TES-$-pricing, tasks
-                were
-                assigned to me. First task was fetching data from API using React JS for particular coloumns in the tables.
-                Next task was React Popover when a user clicks on a particular elements in the coloumn. Also fetch data to
-                the
-                elements present in popover.
-                <pre>                                                                                                </pre>
+                <p>
+                    I was joined in SrinSoft Technologies in April 1<sup>st</sup> as a Software Trainee. Training was
+                    given on JS concepts(synchronous and asynchronous programming) and React JS.
+                    In a project called TES-$-pricing, tasks were assigned to me.
+                    First task was fetching data from API using React JS for
+                    particular columns in the tables. Next task was React Popover when a user clicks
+                    on a particular elements in the coloumn. Also fetch data to the
+                    elements present in popover.
+                </p>
+                <br>
             </div>
             <div class="interest">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>My interest</h4>
-                I am interested in listening english songs. My favourites are Allan Walker, Carly Rae Jepson, etc.
-                I am interested in cooking. I know how to make white sauce pasta.
-                I am interested in listen to daily affairs through YouTube.
-                Also interested in playing games.
-                <pre>                                                                                                </pre>
+                <p>
+                    I am interested in listening english songs. My favourites are Allan Walker, Carly Rae Jepson, etc.
+                    I am interested in cooking. I know how to make white sauce pasta.
+                    I am interested in listen to daily affairs through YouTube.
+                    Also interested in playing games by PC, mobile.
+                </p>
+                <br>
             </div>
             <div class="project">
-                <pre>                                                                                                </pre>
+                <br>
                 <h4>Projects</h4>
                 <h5>Tone generator control using 555 timer</h5>
-                In college, I have done mini project named Tone generator control using 555 timer is used to produce a range
-                of
-                sounds.
-                By handling the two potentiometers of the tone generator, you can change the oscillation frequencies of the
-                two
-                555 timers
-                that work as astable multivibrators, thus generating different sounds. Used to convert electrical signal to
-                audio.
+                <p>
+                    In college, I have done mini project named Tone generator control using 555 timer is used to produce
+                    a range of sounds. By handling the two potentiometers of the tone generator,
+                    you can change the oscillation frequencies of the two 555 timers
+                    that work as astable multivibrators, thus generating different sounds. Used to convert
+                    electrical signal to audio.
+                </p>
+                <img src="Images/ToneGenerator.png" alt="tone generator" class="img-fluid">
                 <h5>High speed carry skip adder using AOI and OAI skip logic</h5>
-                This project is used to increase speed for carry skip adder present in processor. In normal carry skip
-                adder,
-                multiplexer is used
-                for carry skip logic. In this project, And Or Invert and Or And Invert logic is used to decrease the area
-                and
-                delay of skip logic.
-                <pre>                                                                                                </pre>
+                <p>
+                    This project is used to increase speed for carry skip adder present in processor. 
+                    In normal carry skip adder, multiplexer is used for carry skip logic. 
+                    In this project, And Or Invert and Or And Invert logic is used to decrease the
+                    area and delay of skip logic.
+                </p>
+                <br>
             </div>
         </div>
-    
+
     </div>
-    
+
     <footer>
-        <div class="footer"><button>Contact me</button></div>
+        <div class="footer">
+            <div>
+                <div class="footerHeading">Contact me</div>
+                <div>mail ID: ezekieljimlowell1995@gmail.com</div>
+            </div>
+        </div>
     </footer>
     <script src="ResumeBlog.js"></script>
     <script src="ShowContent.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 body {
-    margin: 0px;
+    margin: auto;
     font-family: Verdana, sans-serif;
+    /*background-color: rgb(208, 232, 240);*/
 }
 
 .dropContent {
@@ -9,7 +10,9 @@ body {
     background-color: #f9f9f9;
     min-width: 100px;
     overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
 }
 
 .dropDownButtons {
@@ -20,10 +23,6 @@ body {
     text-decoration: none;
     color: black;
     display: block;
-}
-
-.dropContent a:hover {
-    background-color: rgb(98, 168, 168);
 }
 
 .dropContent a:visited {
@@ -42,7 +41,7 @@ body {
     /*max-height: 4rem;*/
 }
 
-.header button {
+.dropDownButtons button {
     border: none;
     height: 2.5rem;
     background-color: rgb(5, 31, 43);
@@ -51,18 +50,24 @@ body {
     font-size: medium;
     cursor: pointer;
     padding: 10px;
+    margin-right: 20px
 }
 
-.header button:hover {
+.dropDownButtons button:focus {
+    background-color: rgb(33, 37, 41);
+    border: none;
+}
+
+/*.header button:hover {
     background-color: rgb(63, 61, 70);
-}
+}*/
 
-.header .name {
+.name {
     color: white;
     padding-left: 20px;
 }
 
-.college, .school, .winScp, .sap, .skillHtml, 
+.college, .school, .winScp, .sap, .skillHtml,
 .skillCss, .javaScript, .reactJs, .tafe, .srinsoft, .interest, .project, .skills {
     display: none;
 }
@@ -72,28 +77,39 @@ body {
     margin-right: 8%;
     padding-left: 2%;
     padding-right: 2%;
-    background-color: darkgray;
-    border-radius: 5px;
+    /*background-color: rgb(106, 166, 168);*/
+    /*background-color: azure;*/
+    background-color: #8cabc5;
+    margin-bottom: 200px;
+    margin-top: 10px;
+}
+
+.footer {
+    color: white;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(29, 4, 61);
+    /*background-color: rgb(52, 52, 117);*/
+}
+
+.footer .footerHeading {
+    font-weight: bold;
 }
 
 .watermark {
     width: 100%;
-    height: 90%;
+    height: 86%;
     z-index: 0;
-    opacity: 0.5;
+    opacity: 0.4;
     position: absolute;
 }
 
-.footer {
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
-    background-color: rgb(52, 52, 117);
-
-}
-
-@media only screen and (max-width: 680px) {
+/*@media only screen and (max-width: 680px) {
     .header {
         max-height: 6rem
     }
@@ -103,10 +119,12 @@ body {
     .header, .dropDownButtons {
         max-height: 12.5rem;
     }
+
     .dropDownButtons {
         flex-direction: column;
     }
-    .footer {
-        max-width: 550px;
+    .watermark {
+        height: 71%;
     }
-}
+
+}*/

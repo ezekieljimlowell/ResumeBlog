@@ -1,30 +1,34 @@
-let isAcademicButton = false;
-let isSkillButton = false;
-let isExperienceButton = false;
-const academicButton = () => {
+
+function academicButton() {
     document.getElementById("academic").classList.toggle("show");
+    document.getElementById("skills").classList.remove("show");
+    document.getElementById("previousCompanies").classList.remove("show");
 }
 
-const skillButton = () => {
+function skillButton() {
+    document.getElementById("academic").classList.remove("show");
     document.getElementById("skills").classList.toggle("show");
+    document.getElementById("previousCompanies").classList.remove("show");
 }
 
-const experienceButton = () => {
+function experienceButton() {
+    document.getElementById("academic").classList.remove("show");
+    document.getElementById("skills").classList.remove("show");
     document.getElementById("previousCompanies").classList.toggle("show");
 }
 
 window.onclick = function (event) {
     const dropDownContent = document.getElementsByClassName("dropContent");
-    if (!event.target.matches(".dropButton")) {
-        for (let i = 0; i < dropDownContent.length; i++) {
-            let dropDowns = dropDownContent[i];
+    for (let i = 0; i < dropDownContent.length; i++) {
+        let dropDowns = dropDownContent[i];
+        if (!event.target.matches(".dropButton")) {
             if (dropDowns.classList.contains("show")) {
-                dropDowns.classList.remove("show");
-            }
-            else if (dropDowns.previousElementSibling == event.target) {
-                console.log("some")
                 dropDowns.classList.remove("show");
             }
         }
     }
 }
+
+
+
+
