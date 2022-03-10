@@ -12,6 +12,7 @@ const displaySchool = () => {
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displayCollege = () => {
@@ -28,6 +29,7 @@ const displayCollege = () => {
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillWinScp = () => {
@@ -44,6 +46,7 @@ const displaySkillWinScp = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillSap = () => {
@@ -60,6 +63,7 @@ const displaySkillSap = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillHtml = () => {
@@ -76,6 +80,7 @@ const displaySkillHtml = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillCss = () => {
@@ -92,6 +97,7 @@ const displaySkillCss = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillJavaScript = () => {
@@ -108,6 +114,7 @@ const displaySkillJavaScript = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displaySkillReact = () => {
@@ -124,6 +131,7 @@ const displaySkillReact = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displayCompanyTafe = () => {
@@ -140,6 +148,7 @@ const displayCompanyTafe = () => {
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displayCompanySrinSoft = () => {
@@ -156,6 +165,7 @@ const displayCompanySrinSoft = () => {
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displayInterest = () => {
@@ -172,6 +182,7 @@ const displayInterest = () => {
     document.getElementsByClassName("interest")[0].style.display = "block";
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
 }
 
 const displayProject = () => {
@@ -188,4 +199,27 @@ const displayProject = () => {
     document.getElementsByClassName("srinsoft")[0].style.display = "none";
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "block";
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
+}
+
+const displayAwards = () => {
+    document.getElementsByClassName("aboutMe")[0].style.display = "none";
+
+}
+
+const displayAbout = () => {
+    document.getElementsByClassName("skills")[0].style.display = "none";
+    document.getElementsByClassName("school")[0].style.display = "none";
+    document.getElementsByClassName("college")[0].style.display = "none";
+    document.getElementsByClassName("winScp")[0].style.display = "none";
+    document.getElementsByClassName("sap")[0].style.display = "none";
+    document.getElementsByClassName("skillHtml")[0].style.display = "none";
+    document.getElementsByClassName("skillCss")[0].style.display = "none";
+    document.getElementsByClassName("javaScript")[0].style.display = "none";
+    document.getElementsByClassName("reactJs")[0].style.display = "none";
+    document.getElementsByClassName("tafe")[0].style.display = "none";
+    document.getElementsByClassName("srinsoft")[0].style.display = "none";
+    document.getElementsByClassName("interest")[0].style.display = "none";
+    document.getElementsByClassName("project")[0].style.display = "none";
+    document.getElementsByClassName("aboutMe")[0].style.display = "block";
 }

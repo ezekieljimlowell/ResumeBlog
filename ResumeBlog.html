@@ -13,7 +13,11 @@
 
 <body>
     <header class="navbar navbar-dark bg-dark">
-        <h2 class="name">Ezekiel Jim Lowell</h2>
+        <div class="myself">
+            <button type="button" onclick="displayAbout()">
+                <h2 class="name">Ezekiel Jim Lowell</h2>
+            </button>
+        </div>
         <div class="dropDownButtons">
             <div class="dropDown">
                 <button type="button" onclick="academicButton()" class="dropButton btn btn-dark">Academic</button>
@@ -42,31 +46,60 @@
                     <span><a onclick="displayCompanySrinSoft()" class="dropdown-item">SrinSoft</a></span>
                 </div>
             </div>
-            <button type="button" onclick="displayInterest()" class="btn btn-dark">Interests</button>
-            <button type="button" onclick="displayProject()" class="btn btn-dark">Project</button>
-            <button type="button" onclick="displayAwards()">Awards</button>
+            <button type="button" onclick="displayInterest()" class="btn btn-dark" id="interest">Interests</button>
+            <button type="button" onclick="displayProject()" class="btn btn-dark" id="project">Project</button>
     </header>
 
     </div>
-    <img src="Images/watermark.jpeg" class="watermark" alt="watermark">
+    <!--<img src="Images/watermark.jpeg" class="watermark" alt="watermark">-->
     <div>
         <div class="content">
+            <div class="aboutMe">
+                <br>
+                <img src="Images/Profile photo.jpg" alt="Profile photo" height="300px" width="250px"
+                    class="profile img-fluid">
+                <p>
+                    I am Ezekiel Jim Lowell. I was born at Thoothukudi in 16 august 1995. Then I went to Madurai at
+                    the age of 3 in 1998. I had completed pre-primary stage of school at Madurai.
+                    After that I came to Chennai at the age of 5 in 2000. I had stayed in Santhosapuram and
+                    joined in Saint Pauls matriculation school located near Santhosapuram.
+                    I had completed 1<sup>st</sup> to 5<sup>th</sup> at this school.
+                    I had joined at Madambakkam government school and completed 6<sup>th</sup> to
+                    10<sup>th</sup> standard. In Zion matriculation school, I had completed
+                    11<sup>th</sup> and 12<sup>th</sup> standard. I had joined at agni college of technology
+                    to completed BE in 2013. I have completed BE/ECE in 2017.
+                    Then I have joined in a company TAFE(Tractors and Farm Equipment limited).
+                    This company is manufacturing tractors, parts, batteries, paints and
+                    store oil. I was joined as Project Assignee in Dealer Management System(DMS) for 1 year contract.
+                    After contract completed, i had completed courses in javaScript at FITA and also done
+                    React course at Credo systemz. Then i have joined at SrinSoft Technologies as
+                    Software Trainee. Their I was trained in synchronous, asynchronous JavaScript and React JS.
+                    I have done some tasks in a project called TES-$-prising. Due to project unavailability I was
+                    relieved from SrinSoft.
+                </p>
+                <br>
+            </div>
             <div class="school" id="school">
                 <br>
                 <h4>School</h4>
                 <div class="governmentSchool">
                     <h5>Upto 10<sup>th</sup></h5>
+                    <img src="Images/Madambakkam School ground.jpg" alt="Madambakkam school ground"
+                        style="height: 350px; width: 500px;" class="img-fluid">
+                    <br>
                     <p>
                         I have studied in government school upto 10th standard. School has playgrounds inside school
                         compound and separately. It is located in Madambakkam.
-                        I have played many games. some of the games are kabbadi, koko.
-                        I have got 482 out of 500 in 10th standard.Teachers are leniant. I have completed
-                        10<sup>th</sup> on
-                        march 2011.
+                        I have played many games. some of the games are kabbadi, koko, etc.
+                        I have got 482 out of 500 in 10th standard. Teachers are leniant. I have completed
+                        10<sup>th</sup> on march 2011.
                     </p>
                 </div>
                 <div class="matriculationSchool">
                     <h5>11<sup>th</sup> and 12<sup>th</sup></h5>
+                    <img src="Images/Zion matriculation school.jpeg" alt="Zion matriculation school" class="img-fluid"
+                        style="height: 200px; width: 500px;">
+                    <br>
                     <p>
                         I have studied 11<sup>th</sup> and 12<sup>th</sup> standard in Zion matriculation school.
                         It is located in Indira nagar near Selaiyur.
@@ -74,18 +107,89 @@
                         I have completed 12<sup>th</sup> on march 2013
                     </p>
                 </div>
+                <table class="table table-hover table-striped table-bordered .table-responsive{-sm|-md|-lg|-xl}" id="gpa">
+                    <thead>
+                        <tr>
+                            <th scope="col">Exam</th>
+                            <th scope="col">Board</th>
+                            <th scope="col">Marks</th>
+                            <th scope="col">Percent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <td>SSLC</td>
+                            <td>StateBoard</td>
+                            <td>482/500</td>
+                            <td>96.40%</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>HSC</td>
+                            <td>StateBoard</td>
+                            <td>928/1200</td>
+                            <td>77.33%</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <br>
             </div>
             <div class="college">
                 <br>
                 <h4>College</h4>
+                <img src="Images/College.jpeg" alt="College" class="img-fluid" style="width: 500px; height: 200px;">
+                <br>
                 <p>
                     I had done Batchelor of Engineering in Agni colleage of technology located in Thalambur near
                     Navalur. College arranged for Industrial visit to Sriharikota. I had seen two launch pads,
                     more control rooms and mechanical shed. There are many checkposts in between the building
-                    structures.
-                    My CGPA is 7.43. I have completed BE in 2017.
+                    structures. sMy CGPA is 7.43. I have completed BE in 2017.
                 </p>
+                <table class="table table-hover table-striped table-bordered .table-responsive{-sm|-md|-lg|-xl} " id="gpa">
+                    <thead>
+                        <tr>
+                            <th scope="col">Semester</th>
+                            <th scope="col">GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <td>1 </td>
+                            <td>7.269</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>2 </td>
+                            <td>8.042</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>3 </td>
+                            <td>7</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>4 </td>
+                            <td>7.962</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>5 </td>
+                            <td>7.609</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>6 </td>
+                            <td>7.125</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>7 </td>
+                            <td>6.909</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>8 </td>
+                            <td>7.5</td>
+                        </tr>
+                        <tr scope="row">
+                            <td>CGPA</td>
+                            <td>7.43</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <br>
             </div>
             <div class="skills">
@@ -93,30 +197,56 @@
                 <h4>Skills</h4>
                 <div class="winScp">
                     <h5>Win SCP</h5>
+                    <img src="Images/WinScp.png" alt="Win SCP">
+                    <br>
                     <p>
                         Win SCP is a software used to monitor files by using Secured File Transfer Protocol(SFTP).
                         It is used to check files transferred from SAP server to Dealer Management System(DMS) and DMS
-                        to SAP.
+                        to SAP. Files all are generated from SAP by web methods. I have to schedule task for files by
+                        priority wise in web methods. For example Invoice files are generated every one hour out of
+                        24 hours. During month end, large numbers of files need to be pushed from SAP to DMS.
+                        At that time some problem may arise in the file generation and files may not be generated
+                        automatically from SAP. I need to rectify the issues and run back web methods and send
+                        files to DMS and monitor whether invoice files are uploaded in DMS.
+                        Parts, pricing, HSN tax files and many other files were generated automatically from
+                        SAP and went to DMS periodically. This process for outbound files.
+                        Next is inbound files which are generated from DMS and posted to SAP through web methods.
+                        These files also generated in large numbers during month end and needs to be pushed to SAP.
                     </p>
                     <br>
                 </div>
                 <div class="sap">
                     <h5>SAP</h5>
+                    <img src="Images/SAP tables.jpg" alt="SAP tables" class="sapImage img-fluid">
+                    <br>
                     <p>
                         SAP stands for Systems, Applications & Products in Data Processing.
-                        It is used to generate files from datas present SAP tables automatically using web methods.
+                        SAP is a German software and has many types(SAP FICO, SAP SD, SAP ABAB, etc.)
+                        Enterprise resource planning (ERP) is a software used to manage datas of various
+                        departments such as accounts, procurement, project management, supply chain management.
+                        Datas are transferred database to SAP and SAP to database.
+                        It is used to generate files from data present in SAP tables automatically using web methods.
                         Sent the generated files to dealer server. And also receive files from dealer server and post
-                        the datas present in files to SAP.
+                        the datas present in files to SAP. Each type of information are stored as tables and
+                        can be viewed in computer with the help of SAP application.
+                        Data can be checked, generated and can be edited with particular codes.
+                        Some tables are not accessible for beginner workers. Some tables were given access for
+                        only senior workers. Editable tables were given access for important senior workers.
+                        SAP tables basically contains information about products, rates, delivery date, retail date,
+                        size, weight, warranty, tax and dealer information.
                     </p>
                     <br>
                 </div>
                 <div class="skillHtml">
                     <h5>HTML</h5>
+                    <img src="Images/HTML container.webp" alt="Html container" class="img-fluid" width="400px">
                     <p>
                         HTML is used to display just a content. There are 2 types of tag elements present in HTMl.
                         First one is semantic elements and second is non-semantic elements.
                         Semantic elements has purpose by its names. Examples: header, article, iframe, footer, etc.
                         Non-semantic elements does not have meaning about its content when used. Examples: div and span.
+                        HTML elements are available as nodes in Document Object Model(DOM). DOM is represented as
+                        Tree structures.
                     </p>
                     <br>
                 </div>
@@ -175,6 +305,8 @@
             <div class="tafe">
                 <br>
                 <h4>TAFE</h4>
+                <img src="Images/reception.jpg" alt="TAFE reception" class="img-fluid">
+                <br>
                 <p>
                     TAFE(Tractors And Farm Equipment limited) manufactures tractors, parts, store oil and eicher
                     vehicles. I had joined as Project Assinee in Dealer Management System.
@@ -191,6 +323,8 @@
             <div class="srinsoft">
                 <br>
                 <h4>SrinSoft</h4>
+                <img src="Images/SrinSoft reception.webp" alt="Srinsoft" class="img-fluid">
+                <br>
                 <p>
                     I was joined in SrinSoft Technologies in April 1<sup>st</sup> as a Software Trainee. Training was
                     given on JS concepts(synchronous and asynchronous programming) and React JS.
