@@ -1,12 +1,11 @@
 body {
     margin: auto;
     font-family: Verdana, sans-serif;
-    background: url("./Images/watermark.jpeg") no-repeat center center fixed;
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), url("./Images/watermark.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
     /*background-color: rgb(208, 232, 240);*/
 }
 
@@ -125,14 +124,8 @@ img {
     position: absolute;
 }
 
-/*@media only screen and (max-width: 680px) {
-    .header {
-        max-height: 6rem
-    }
-}*/
-
 @media screen and (max-width: 550px) {
-    .header, .dropDownButtons {
+     .dropDownButtons {
         max-height: 12.5rem;
     }
 
