@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="ResumeBlog.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
 </head>
 
 <body>
+    <!--Header-->
     <header class="navbar navbar-dark bg-dark">
         <div class="myself">
             <button type="button" onclick="displayAbout()">
-                <h2 class="name">Ezekiel Jim Lowell</h2>
+                <img src="Images/Profile photo.jpg" alt="Profile photo" width="50px"
+                    class="name profile img-fluid">
             </button>
         </div>
         <div class="dropDownButtons">
@@ -48,16 +49,13 @@
             </div>
             <button type="button" onclick="displayInterest()" class="btn btn-dark" id="interest">Interests</button>
             <button type="button" onclick="displayProject()" class="btn btn-dark" id="project">Project</button>
+        </div>
     </header>
-
-    </div>
-    <!--<img src="Images/watermark.jpeg" class="watermark" alt="watermark">-->
     <div>
         <div class="content">
+            <!--About me-->
             <div class="aboutMe">
                 <br>
-                <img src="Images/Profile photo.jpg" alt="Profile photo" height="300px" width="250px"
-                    class="profile img-fluid">
                 <p>
                     I am Ezekiel Jim Lowell. I was born at Thoothukudi in 16 august 1995. Then I went to Madurai at
                     the age of 3 in 1998. I had completed pre-primary stage of school at Madurai.
@@ -79,6 +77,7 @@
                 </p>
                 <br>
             </div>
+            <!--School-->
             <div class="school" id="school">
                 <br>
                 <h4>School</h4>
@@ -109,6 +108,7 @@
                 </div>
                 <table class="table table-hover table-striped table-bordered table-responsive{-sm|-md|-lg|-xl}"
                     id="gpa">
+                    <caption class="figure-caption text-top">Marks obtained in school</caption>
                     <thead>
                         <tr>
                             <th>Exam</th>
@@ -134,6 +134,7 @@
                 </table>
                 <br>
             </div>
+            <!--College-->
             <div class="college">
                 <br>
                 <h4>College</h4>
@@ -147,6 +148,7 @@
                 </p>
                 <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
                     id="gpa">
+                    <caption>College marks</caption>
                     <thead>
                         <tr>
                             <th>Semester</th>
@@ -197,6 +199,7 @@
             <div class="skills">
                 <br>
                 <h4>Skills</h4>
+                <!--Win SCP-->
                 <div class="winScp">
                     <h5>Win SCP</h5>
                     <img src="Images/WinScp.png" alt="Win SCP">
@@ -217,6 +220,7 @@
                     </p>
                     <br>
                 </div>
+                <!--SAP-->
                 <div class="sap">
                     <h5>SAP</h5>
                     <img src="Images/SAP tables.jpg" alt="SAP tables" class="sapImage img-fluid">
@@ -239,6 +243,7 @@
                     </p>
                     <br>
                 </div>
+                <!--Skill HTML-->
                 <div class="skillHtml">
                     <h5>HTML</h5>
                     <img src="Images/HTML container.webp" alt="Html container" class="img-fluid" width="400px">
@@ -248,10 +253,23 @@
                         Semantic elements has purpose by its names. Examples: header, article, iframe, footer, etc.
                         Non-semantic elements does not have meaning about its content when used. Examples: div and span.
                         HTML elements are available as nodes in Document Object Model(DOM). DOM is represented as
-                        Tree structures.
+                        Tree structures. Block elements should not be placed under <em>paragraph</em> tag.
+                        If block elements are placed inside paragraph, then the elements inside paragraph will become
+                        global and styles applied to paragraphs are not applied to block child elements.
                     </p>
                     <br>
+                    <p>
+                        To make the poem and quotes to appear as same use pre tag. For superscript and subscript, use
+                        sup and sub tag. Table tag is used to display content as tables, tr tag is row, th is header, td
+                        is for column.
+                        List and ordered list are used to display elements in order. Below are block and inline
+                        elements.
+                    </p>
+                    <img src="Images/Block Elements.jpg" class="img-fluid">
+                    <img src="Images/Inline Elements.jpg" class="img-fluid">
+                    <br>
                 </div>
+                <!--Skill CSS-->
                 <div class="skillCss">
                     <h5>CSS</h5>
                     <p>
@@ -263,7 +281,425 @@
                         Responsive design given by flex, bootstrap and media queries.
                     </p>
                     <br>
+                    <img src="Images/Box model.png" alt="box model" class="img-fluid">
+                    <br>
+                    <ul>
+                        <li>Content - The content of the box, where text and images appear</li>
+                        <li>Padding - Clears an area around the content. The padding is transparent</li>
+                        <li>Border - A border that goes around the padding and content</li>
+                        <li>Margin - Clears an area outside the border. The margin is transparent</li>
+                    </ul>
+                    <b>Box sizing border box</b>
+                    <p>
+                        CSS border-box is the most popular choice for setting box-sizing . It guarantees that the
+                        content box shrinks to make space for the padding and borders. Therefore, if you set your
+                        element width to 200 pixels, border-box makes sure that the content, padding, and borders fit in
+                        this number.
+                    </p>
+                    <b>Pseudo classes in CSS</b>
+                    <ul>
+                        CSS Selectors
+                        Dynamic pseudo-classes
+                        <li>:link</li>
+                        <li>:visited</li>
+                        <li>:hover</li>
+                        <li>:active</li>
+                        <li>:focus</li>
+                        The target pseudo-classes
+                        <li>:target</li>
+                        The language pseudo-classes
+                        <li>:lang</li>
+                        The UI element states pseudo-classes
+                        <li>:enabled</li>
+                        <li>:disabled</li>
+                        <li>:checked</li>
+                        Structural pseudo-classes
+                        <li>:root</li>
+                        <li>:nth-child</li>
+                        <li>:nth-last-child</li>
+                        <li>:nth-of-type</li>
+                        <li>:nth-last-of-type</li>
+                        <li>:first-child</li>
+                        <li>:last-child</li>
+                        <li>:first-of-type</li>
+                        <li>:last-of-type</li>
+                        <li>:only-child</li>
+                        <li>:only-of-type</li>
+                        <li>:empty</li>
+                        The negation pseudo-classes
+                        <li>:not</li>
+                    </ul>
+                    <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
+                    id="gpa">
+                        <thead>
+                            <tr>
+                                <th scope="col">Selector</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:active"><code>:active</code></a></td>
+                                <td>Matches when the user activates (for example clicks on) an element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:any-link"><code>:any-link</code></a></td>
+                                <td>
+                                    Matches both the <code>:link</code> and <code>:visited</code> states of
+                                    a link.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:blank"><code>:blank</code></a></td>
+                                <td>
+                                    Matches an
+                                    <a href="/en-US/docs/Web/HTML/Element/input"><code>&lt;input&gt;</code> element</a>
+                                    whose input value is empty.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:checked"><code>:checked</code></a></td>
+                                <td>Matches a radio button or checkbox in the selected state.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:current"><code>:current</code></a></td>
+                                <td>
+                                    Matches the element, or an ancestor of the element, that is currently
+                                    being displayed.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:default"><code>:default</code></a></td>
+                                <td>
+                                    Matches the one or more UI elements that are the default among a set of
+                                    similar elements.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:dir"><code>:dir</code></a></td>
+                                <td>
+                                    Select an element based on its directionality (value of the HTML
+                                    <code><a href="/en-US/docs/Web/HTML/Global_attributes/dir">dir</a></code>
+                                    attribute or CSS
+                                    <code><a href="/en-US/docs/Web/CSS/direction">direction</a></code>
+                                    property).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:disabled"><code>:disabled</code></a></td>
+                                <td>Matches user interface elements that are in an disabled state.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:empty"><code>:empty</code></a></td>
+                                <td>Matches an element that has no children except optionally white space.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:enabled"><code>:enabled</code></a></td>
+                                <td>Matches user interface elements that are in an enabled state.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:first"><code>:first</code></a></td>
+                                <td>
+                                    In <a href="/en-US/docs/Web/CSS/Paged_Media">Paged Media</a>, matches
+                                    the first page.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:first-child"><code>:first-child</code></a></td>
+                                <td>Matches an element that is first among its siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:first-of-type"><code>:first-of-type</code></a></td>
+                                <td>Matches an element which is first of a certain type among its siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:focus"><code>:focus</code></a></td>
+                                <td>Matches when an element has focus.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:focus-visible"><code>:focus-visible</code></a></td>
+                                <td>
+                                    Matches when an element has focus and the focus should be visible to the
+                                    user.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:focus-within"><code>:focus-within</code></a></td>
+                                <td>
+                                    Matches an element with focus plus an element with a descendent that has
+                                    focus.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:future"><code>:future</code></a></td>
+                                <td>Matches the elements after the current element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:hover"><code>:hover</code></a></td>
+                                <td>Matches when the user hovers over an element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:indeterminate"><code>:indeterminate</code></a></td>
+                                <td>
+                                    Matches UI elements whose value is in an indeterminate state, usually
+                                    <a href="/en-US/docs/Web/HTML/Element/input/checkbox">checkboxes</a>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:in-range"><code>:in-range</code></a></td>
+                                <td>Matches an element with a range when its value is in-range.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:invalid"><code>:invalid</code></a></td>
+                                <td>
+                                    Matches an element, such as an <code>&lt;input&gt;</code>, in an invalid
+                                    state.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:lang"><code>:lang</code></a></td>
+                                <td>
+                                    Matches an element based on language (value of the HTML
+                                    <a href="/en-US/docs/Web/HTML/Global_attributes/lang">lang</a>
+                                    attribute).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:last-child"><code>:last-child</code></a></td>
+                                <td>Matches an element which is last among its siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:last-of-type"><code>:last-of-type</code></a></td>
+                                <td>Matches an element of a certain type that is last among its siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:left"><code>:left</code></a></td>
+                                <td>
+                                    In <a href="/en-US/docs/Web/CSS/CSS_Pages">Paged Media</a>, matches
+                                    left-hand pages.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:link"><code>:link</code></a></td>
+                                <td>Matches unvisited links.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:local-link"><code>:local-link</code></a></td>
+                                <td>
+                                    Matches links pointing to pages that are in the same site as the current
+                                    document.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:is"><code>:is()</code></a></td>
+                                <td>Matches any of the selectors in the selector list that is passed in.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:not"><code>:not</code></a></td>
+                                <td>
+                                    Matches things not matched by selectors that are passed in as a value to
+                                    this selector.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:nth-child"><code>:nth-child</code></a></td>
+                                <td>
+                                    Matches elements from a list of siblings — the siblings are matched by a
+                                    formula of the form <var>an+b</var> (e.g. 2n + 1 would match elements 1,
+                                    3, 5, 7, etc. All the odd ones.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:nth-of-type"><code>:nth-of-type</code></a></td>
+                                <td>
+                                    Matches elements from a list of siblings that are of a certain type
+                                    (e.g. <code>&lt;p&gt;</code> elements) — the siblings are matched by a
+                                    formula of the form <var>an+b</var> (e.g. 2n + 1 would match that type
+                                    of element, numbers 1, 3, 5, 7, etc. All the odd ones.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:nth-last-child"><code>:nth-last-child</code></a></td>
+                                <td>
+                                    Matches elements from a list of siblings, counting backwards from the
+                                    end. The siblings are matched by a formula of the form
+                                    <var>an+b</var> (e.g. 2n + 1 would match the last element in the
+                                    sequence, then two elements before that, then two elements before that,
+                                    etc. All the odd ones, counting from the end.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:nth-last-of-type"><code>:nth-last-of-type</code></a>
+                                </td>
+                                <td>
+                                    Matches elements from a list of siblings that are of a certain type
+                                    (e.g. <code>&lt;p&gt;</code> elements), counting backwards from the end.
+                                    The siblings are matched by a formula of the form <var>an+b</var> (e.g.
+                                    2n + 1 would match the last element of that type in the sequence, then
+                                    two elements before that, then two elements before that, etc. All the
+                                    odd ones, counting from the end.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:only-child"><code>:only-child</code></a></td>
+                                <td>Matches an element that has no siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:only-of-type"><code>:only-of-type</code></a></td>
+                                <td>Matches an element that is the only one of its type among its siblings.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:optional"><code>:optional</code></a></td>
+                                <td>Matches form elements that are not required.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:out-of-range"><code>:out-of-range</code></a></td>
+                                <td>Matches an element with a range when its value is out of range.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:past"><code>:past</code></a></td>
+                                <td>Matches the elements before the current element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:placeholder-shown"><code>:placeholder-shown</code></a>
+                                </td>
+                                <td>Matches an input element that is showing placeholder text.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:playing"><code>:playing</code></a></td>
+                                <td>
+                                    Matches an element representing an audio, video, or similar resource
+                                    that is capable of being "played" or "paused", when that element is
+                                    "playing".
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:paused"><code>:paused</code></a></td>
+                                <td>
+                                    Matches an element representing an audio, video, or similar resource
+                                    that is capable of being "played" or "paused", when that element is
+                                    "paused".
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:read-only"><code>:read-only</code></a></td>
+                                <td>Matches an element if it is not user-alterable.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:read-write"><code>:read-write</code></a></td>
+                                <td>Matches an element if it is user-alterable.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:required"><code>:required</code></a></td>
+                                <td>Matches form elements that are required.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:right"><code>:right</code></a></td>
+                                <td>
+                                    In <a href="/en-US/docs/Web/CSS/CSS_Pages">Paged Media</a>, matches
+                                    right-hand pages.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:root"><code>:root</code></a></td>
+                                <td>Matches an element that is the root of the document.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:scope"><code>:scope</code></a></td>
+                                <td>Matches any element that is a scope element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:valid"><code>:valid</code></a></td>
+                                <td>
+                                    Matches an element such as an <code>&lt;input&gt;</code> element, in a
+                                    valid state.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:target"><code>:target</code></a></td>
+                                <td>
+                                    Matches an element if it is the target of the current URL (i.e. if it
+                                    has an ID matching the current
+                                    <a href="https://en.wikipedia.org/wiki/Fragment_identifier" class="external"
+                                        rel=" noopener">URL fragment</a>).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/:visited"><code>:visited</code></a></td>
+                                <td>Matches visited links.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <b>Pseudo Elements</b>
+                    <br>
+                    <table
+                        class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
+                        id="gpa">
+                        <thead>
+                            <tr>
+                                <th scope="col">Selector</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::after"><code>::after</code></a></td>
+                                <td>
+                                    Inserts a stylable element appearing after the originating element's
+                                    actual content, if used with the <a
+                                        href="/en-US/docs/Web/CSS/content"><code>content</code></a> property
+                                    with a value other than <code>none</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::before"><code>::before</code></a></td>
+                                <td>
+                                    Inserts a stylable element appearing before the originating element's
+                                    actual content, if used with the <a
+                                        href="/en-US/docs/Web/CSS/content"><code>content</code></a> property
+                                    with a value other than <code>none</code>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::first-letter"><code>::first-letter</code></a></td>
+                                <td>Matches the first letter of the element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::first-line"><code>::first-line</code></a></td>
+                                <td>Matches the first line of the containing element.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::grammar-error"><code>::grammar-error</code></a></td>
+                                <td>
+                                    Matches a portion of the document containing a grammar error as flagged
+                                    by the browser.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::marker"><code>::marker</code></a></td>
+                                <td>
+                                    Matches the marker box of a list item, which typically contains a bullet
+                                    or number.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::selection"><code>::selection</code></a></td>
+                                <td>Matches the portion of the document that has been selected.</td>
+                            </tr>
+                            <tr>
+                                <td><a href="/en-US/docs/Web/CSS/::spelling-error"><code>::spelling-error</code></a>
+                                </td>
+                                <td>
+                                    Matches a portion of the document containing a spelling error as flagged
+                                    by the browser.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
                 </div>
+                <!--JavaScript-->
                 <div class="javaScript">
                     <h5>JavaScript</h5>
                     JavaScript is used to add functionality to web elements. There are three main parts in JS.
@@ -283,7 +719,21 @@
                         child and also give styles.
                     </p>
                     <br>
+                    <div class="label">
+                        <label>Difference between synchronous and asynchronous JS</label>
+                    </div>
+                    <img src="Images/Synchronous and asynchronous.png" alt="Synchronous and asynchronous"
+                        class="img-fluid">
+                    <br>
+                    <p>
+                        There are 2 types of data types. Primitive and complex data types.
+                        Primitive datatypes consist of number, booleon, string, symbol,
+                        undefined, and null. Complex data types consist of arrays,
+                        object and functions.
+                    </p>
+                    <br>
                 </div>
+                <!--React JS-->
                 <div class="reactJs">
                     <h5>React JS</h5>
                     <p>
@@ -301,9 +751,57 @@
                         Then after that code size reduced considerably. Advantages of React are speed, code reusability,
                         easier to debug using React Developer tools.
                     </p>
+                    <p>
+                        Important concepts of React are conditional rendering, hooks, rendering different types of
+                        datatypes and JS like primitive values, arrays, objects and promise, routers, state and props,
+                        components, and lifecyle. React redux is used to maintain data and React JS is just a view
+                        layer.
+                    </p>
+                    <p>
+                        We must need to know atleast basic 5 hooks such as useState, useEffect, useContext, useMemo
+                        and useCallback. State updation is done by useState. useEffect have three usecases.
+                        When dependency array is empty, then useEffect executes only at the beginning of loading.
+                        When a dependency array has any state, whenever the state change happens, useEffect
+                        executes. When there is no dependency array, then useEffect for executes for each
+                        render. useContext hook is used to send data between nested components and also
+                        avoid prop drilling. Difference between useContext and redux, redux is used to maintain
+                        data and store state and initial state not mutated. Redux change the state by
+                        creating the reference and change that reference. But useContext just pass the state from
+                        one component to another and also mutates the state when state changes.
+                        useMemo and useCallback is used to prevent unnecessary renders.
+                    </p>
+                    <img src="Images/Redux flow.png" alt="Redux flow" class="img-fluid">
+                    <br>
+                    <p>
+                        Redux is an open source javaScript library used for state management and centralizing
+                        application states. Redux have important concepts such as store, action, reducer,
+                        subscribe, dispatch, connect, provider, mapStateToProps and mapDispatchToProps.
+                        A store is an immutable object tree in Redux. A store is a state container which holds the
+                        application's state. Redux can have only a single store in your application. Whenever a store is
+                        created in Redux, you need to specify the reducer.
+                        Actions are the only source of information for the store as per Redux official documentation. It
+                        carries a payload of information from your application to store. As discussed earlier, actions
+                        are plain JavaScript object that must have a type attribute to indicate the type of action
+                        performed.In Redux, a reducer is a pure function that takes an action and the previous state of
+                        the application and returns the new state. The action describes what happened and it is the
+                        reducer's job to return the new state based on that action. dispatch is a function of the Redux
+                        store. You call store. dispatch to dispatch an action. This is the only way to trigger a state
+                        change. With React Redux, your components never access the store directly - connect does it for
+                        you. The connect() function connects a React component to a Redux store. It provides its
+                        connected component with the pieces of the data it needs from the store, and the functions it
+                        can use to dispatch actions to the store. In Redux, subscriptions are called after the root
+                        reducer has returned the new state, so you may dispatch in the subscription listeners. You are
+                        only disallowed to dispatch inside the reducers because they must have no side effects.
+                        Providing a mapDispatchToProps allows you to specify which actions your component might need to
+                        dispatch. It lets you provide action dispatching functions as props. Therefore, instead of
+                        calling props. The mapStateToProps function is used in the Redux pattern to reflect any updates
+                        to the Redux store and merge them into props in your component. The Redux store serves as a
+                        centralized place for the state to live in your application.
+                    </p>
                     <br>
                 </div>
             </div>
+            <!--TAFE-->
             <div class="tafe">
                 <br>
                 <h4>TAFE</h4>
@@ -320,8 +818,29 @@
                     service invoice files came from dealer server and transferred through
                     SFTP(Secured File Transfer Protocol) and posted to SAP by Remote Function Call(RFC).
                 </p>
+                <p>
+                    Roll out process for dealers were also done by my team. There were 6 types of files needs
+                    to be generated. Village master mapping files generated to map dealer informations like
+                    dealer location and sales area were given. Next dealer master file was generated to
+                    map key part dealers with dealers. Vehicle master files were generated for each dealers.
+                    Then finally dealers were made DMS dealers in specific SAP tables. After that, I need to
+                    check other dealer table in SAP whether marked dealers were made DMS. I have to
+                    inform to backend data team.
+                </p>
+                <p>
+                    Tractors data were first generated in SAP with random serial numbers, gate entry date,
+                    dealers and vehicle numbers. When gate exit done, invoice files were generated for gate
+                    exited vehicles for every one hour. This status is known as ST1 status.
+                    Then the tractors moved to floorstock of dealer's area and vehicle master file is generated
+                    as ST2 status. Sale order files are generated once the product's price given by dealers.
+                    When customer buys tractor, dealers were delivered the tractors to customers. This status
+                    is ST5. When the customer fully pay the prize then the tractor is in retailed status that
+                    is ST6. And also delivery and retail files were automatically generated from DMS server to
+                    posted to SAP through SFTP(Secured File Transfer Protocol).
+                </p>
                 <br>
             </div>
+            <!--SrinSoft-->
             <div class="srinsoft">
                 <br>
                 <h4>SrinSoft</h4>
@@ -336,23 +855,38 @@
                     on a particular elements in the coloumn. Also fetch data to the
                     elements present in popover.
                 </p>
+                <p>
+                    I have done todo application using redux and write unit testing using React
+                    testing library. I had done tic tac toe(X/O game) using React Js and
+                    also write unit testing. I have practised on React basic hooks. I had written
+                    unit test code for asynchronous javaScript in react testing library.
+                    I had displayed movies image and title from movie DB API and write unit
+                    test using React testing library.
+                </p>
                 <br>
             </div>
+            <!--Areas of interest-->
             <div class="interest">
                 <br>
                 <h4>My interest</h4>
                 <p>
                     I am interested in listening english songs. My favourites are Allan Walker, Carly Rae Jepson, etc.
-                    I am interested in cooking. I know how to make white sauce pasta.
-                    I am interested in listen to daily affairs through YouTube.
-                    Also interested in playing games by PC, mobile.
+                    I am interested in cooking. I know how to make white sauce pasta and also small dishes.
+                    I am interested in listening to daily affairs like national and international news,
+                    travel channels and cooking channels through YouTube.
+                    Also interested in playing games by PC and mobile.
+                    I played ps2 games when I was 17 age in my uncle's house. I had completed more
+                    games.
                 </p>
                 <br>
+                <img src="Images/Pasta.jpeg" alt="pasta" class="img-fluid">
+                <br>
             </div>
+            <!--Project-->
             <div class="project">
                 <br>
-                <h4>Projects</h4>
-                <h5>Tone generator control using 555 timer</h5>
+                <h2>Projects</h2>
+                <h3>Tone generator control using 555 timer</h3>
                 <img src="Images/555-timer-tone-generator-circuit-1024x664.png" alt="tone generator" class="img-fluid"
                     style="height: 400px;">
                 <br>
@@ -366,10 +900,13 @@
                 </p>
                 <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
                     id="gpa">
+                    <caption>Components required</caption>
                     <thead>
-                        <th>S.No</th>
-                        <th>Components</th>
-                        <th>Quantity</th>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Components</th>
+                            <th>Quantity</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -410,12 +947,14 @@
                     </tbody>
                 </table>
                 <br>
-                <figure>
-                    <figcaption>555 Timer Pin configuration</figcaption>
-                    <img src="Images/555 Timer.png" alt="555 Timer" class="img-fluid" style="height: 300px;" id="timer">
-                </figure>
+
+                <h4>Pin configuration</h4>
+                <img src="Images/555 Timer.png" alt="555 Timer" class="img-fluid" style="height: 300px;" id="timer">
+
                 <br>
-                <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}" id="gpa">
+                <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
+                    id="gpa">
+                    <caption>555 Timer pin configuration</caption>
                     <thead>
                         <tr>
                             <th>Pin number</th>
@@ -466,23 +1005,207 @@
                         </tr>
                     </tbody>
                 </table>
-                <h5>High speed carry skip adder using AOI and OAI skip logic</h5>
+                <h4>Working</h4>
+                <p>
+                    The operation of this circuit is based around the working principle of a self-triggering oscillator
+                    (astable multivibrator), performed by a 555 timer circuit (NE555). When the circuit is
+                    powered on, The values of resistors (R1, R2) & capacitors (C1, C2) on the left side of the circuit
+                    set the pitch of the output tone coming from the audio transducer (loudspeaker), including a
+                    variable resistor (potentiometer) serving as our pitch control.
+                    The capacitor (C2) to the far left filters out as much noise or undesired operation of the
+                    potentiometer due to which we get a smooth pitch change whilst adjusting. This circuit can be
+                    operated from as little as 6V to up to 12 V power supply.
+                    Astable Multivibrator circuit mode for 555 timer IC is also called Free running or self-triggering
+                    mode. It doesn't have any stable state ie has two quasi-stable states (HIGH & LOW). No external
+                    triggering is required in Astable mode, it automatically interchanges its two states on a particular
+                    interval, hence generates a rectangular waveform. So in this tutorial, we are going to make “Astable
+                    Multivibrator using 555 Timer“. Watch the video for Step by Step instructions
+                    An astable multivibrator is a free-running oscillator that switches continuously between its two
+                    unstable states. With no external signal applied, the transistors alternately switch from cutoff to
+                    saturation state at a frequency that RC time constants of the coupling circuit determine. If these
+                    time constants are equal (R and C are equal) then a square wave will generate with a frequency of
+                    1/1.4 RxC. Hence, an astable multivibrator is also a pulse generator or a square wave generator.
+                    <em>
+                        Tone generator is used in burglar alarm and calling bells. It is used to generate
+                        dial tones in telephonic devices and produce sounds in toys.
+                    </em>
+                </p>
+                <br>
+                <h3>High speed carry skip adder using AOI and OAI skip logic</h3>
                 <br>
                 <img src="Images/HighSpeedCarrySkipAdder.png" alt="High speed carry skip adder" class="img-fluid"
                     style="height: 300px;">
                 <br>
+                <h4>Abstraction</h4>
                 <p>
                     This project is used to increase speed for carry skip adder present in processor.
                     In normal carry skip adder, multiplexer is used for carry skip logic.
                     In this project, And Or Invert and Or And Invert logic is used to decrease the
                     area and delay of skip logic.
                 </p>
+                <h4>Adders</h4>
+                <p>
+                    Adders are a key building block in arithmetic and logic units and hence
+                    increasing their speed and reducing their power/energy consumption strongly
+                    affect the speed and power consumption of processors. There are many works on
+                    the subject of optimizing the speed and power of these units, which have been
+                    reported. Obviously, it is highly desirable to achieve higher speeds at low-
+                    power/energy consumptions which is a challenge for the designers of general
+                    purpose processors. One of the effective techniques to lower the power
+                    consumption of digital circuits is to reduce the supply voltage due to quadratic
+                    dependence of the switching energy on the voltage. Moreover, the subthreshold
+                    current, which is the main leakage component in OFF devices has an exponential
+                    dependence on the supply voltage level through the drain-induced barrier lowering
+                    effect. Depending on the Amount of the supply voltage reduction, the operation of
+                    ON devices may reside in the superthreshold, near-threshold or subthreshold
+                    regions. Working in the superthreshold region provides us with lower delay and
+                    higher switching and leakage powers compared with the near/subthreshold regions.
+                    In the subthreshold region, the logic gate delay and leakage power exhibit
+                    exponential dependences on the supply and threshold voltages. Moreover, these
+                    voltages are subject to process and environmental variations in the nanoscale
+                    technologies. The variations increase uncertainties in the aforesaid performance
+                    parameters. In addition, the small subthreshold Current causes a large delay for the
+                    circuits operating in the subthreshold region. Recently, the near-threshold region
+                    has been considered as a region that provides a more desirable tradeoff point
+                    1between delay and power dissipation compared with that of the subthreshold one
+                    because it results in lower delay compared with the subthreshold region and
+                    significantly lowers switching and leakage powers compared with the
+                    superthreshold region. In addition, near-threshold operation which uses supply
+                    voltage levels near the threshold voltage of transistors suffers considerably less
+                    from the process and environmental variations compared with the subthreshold
+                    region.
+                </p>
+                <h4>Scope of the project</h4>
+                <ul>
+                    <li>
+                        In this paper, we present a carry skip adder (CSKA) structure that has a higher
+                        speed yet lower energy consumption compared with the conventional one.
+                    </li>
+                    <li>
+                        The speed enhancement is achieved by applying concatenation and
+                        incrementation schemes to improve the efficiency of the conventional CSKA
+                        (Conv-CSKA) structure. In addition, instead of utilizing multiplexer logic, the
+                        proposed structure makes use of AND-OR-Invert (AOI) and OR-AND-Invert
+                        (OAI) compound gates for the skip logic.
+                    </li>
+                    <li>
+                        The proposed structures are assessed by comparing their speed, power and
+                        energy parameters with those of other adders using a 45-nm static CMOS
+                        technology for a wide range of supply voltages.
+                    </li>
+                    <li>
+                        Simulations on the proposed hybrid variable latency CSKA reveal reduction in
+                        the power consumption compared with the latest works in this field while
+                        having a reasonably high speed.
+                    </li>
+                </ul>
+                <h4>Delay optimization</h4>
+                <p>
+                    The worst-case carry propagation delays in carry-skip adders and block
+                    carry-look ahead adders depend on how the full adders are grouped structurally
+                    together into blocks as well as the number of levels. The authors report on a
+                    multidimensional dynamic programming paradigm for configuring these two
+                    adders to attain minimum latency. Previous methods are applicable only to very
+                    limited delay models that do not guarantee a minimum latency configuration.
+                    Under the delay model, critical path delay is calculated not only taking into
+                    account the intrinsic gate delays, but also the fanin and fanout contributions.
+                </p>
+                <h4>Xilinx ISE</h4>
+                <p>
+                    Xilinx ISE (Integrated Synthesis Environment) is a software tool produced
+                    by Xilinx for synthesis and analysis of HDL designs, enabling the developer
+                    to synthesize("compile") their designs, perform timing analysis,
+                    examine RTL diagrams, simulate a design's reaction to different stimuli and
+                    configure the target device with the programmer. Xilinx ISE is a design
+                    environment for FPGA products from Xilinx, and is tightly-coupled to the
+                    architecture of such chips and cannot be used with FPGA products from other
+                    vendors. The Xilinx ISE is primarily used for circuit synthesis and design while
+                    ISIM or the ModelSim logic simulator is used for system-level testing.
+                </p>
+                <h4>Conventional carry skip adder</h4>
+                <br>
+                <img src="Images/Block diagram of conventional CSKA.jpg" alt="conventional CSKA" class="img-fluid">
+                <br>
+                <p>
+                    Multiplexer is used as Skip logic in Conventional Carry Skip Adder.It is a
+                    device that selects one of everal analog or digital input signals and forwards the
+                    selected input into a single line. A multiplexer of 2n inputs has n select lines,
+                    which are used to select which input line to send to the output. Multiplexers are
+                    mainly used to increase the amount of data that can be sent over the network within
+                    a certain amount of time and bandwidth A multiplexer is also called a data selector.
+                </p>
+                <h5>Drawbacks of conventional carry skip adder</h5>
+                <ul>
+                    <li>More area overhead system</li>
+                    <li>More power consumption</li>
+                    <li>Low speed architecture</li>
+                    <li>Gate delay is high in multiplexer</li>
+                </ul>
+                <h4>Carry skip adder using AOI and OAI skip logic</h4>
+                <br>
+                <img src="Images/Block diagram of CSKA using AOI and OAI skip logic.jpg" alt="CSKA uisng AOI and OAI"
+                    class="img-fluid">
+                <br>
+                <p>
+                    The structure is based on combining
+                    the concatenation and the incrementation schemes with the Conv-CSKA structure,
+                    and hence, is denoted by CI-CSKA. It provides us with the ability to use simpler
+                    carry skip logics. The logic replaces 2:1 multiplexers by AOI/OAI compound gates.
+                    The gates which consist of fewer transistors have lower delay, area and smaller
+                    power consumption compared with those of the 2:1 multiplexer. Note that in this
+                    structure as the carry propagates through the skip logics, it becomes complemented.
+                    Therefore, at the output of the skip logic of even stages, the complement of the
+                    carry is generated.
+                </p>
+                <div class="label">
+                    <label for="incrementation">Incrementation block M/2</label>
+                </div>
+                <img src="Images/Incrementation block.jpg" alt="Incrementation block" class="img-fluid"
+                    id="incrementation">
+                <br>
+                <p>
+                    The structure has a considerable lower propagation delay with a
+                    slightly smaller area compared with those of the conventional one. Note that while
+                    the power consumptions of the AOI (or OAI) gate are smaller than that of the
+                    multiplexer, the power consumption of the proposed CI-CSKA is a little more than
+                    that of the conventional one. This is due to the increase in the number of the gates
+                    which imposes a higher wiring capacitance.
+                </p>
+                <h5>AOI and OAI skip logic</h5>
+                <div class="label">
+                    <label>AOI skip logic</label>
+                </div>
+                <img src="Images/AOI skip logic.jpg" alt="AOI skip logic" class="img-fluid">
+                <br>
+                <p>
+                    The use of the static AOI and OAI gates (six transistors) compared with the
+                    static 2:1 multiplexer (12 transistors), leads to decreases in the area usage and
+                    delay of the skip logic.To calculate the delay of the skip logic, the average of the
+                    delays of the AOI and OAI gates, which are typically close to one another.
+                </p>
+                <div class="label">
+                    <label>OAI skip logic</label>
+                </div>
+                <img src="Images/OAI skip logic.jpg" src="OAI skip logic" class="img-fluid">
+                <br>
+                <p>
+                    The reason for using both AOI and OAI compound gates as the skip logics is the
+                    inverting functions of these gates in standard cell libraries. If an AOI is used as the
+                    skip logic, the next skip logic should use OAI gate.
+                </p>
+                <h5>Advantage</h5>
+                <ul>
+                    <li>Less area overhead system</li>
+                    <li>Less power consumption</li>
+                    <li>High speed architecture</li>
+                    <li>AOI and OAI logic is used.</li>
+                </ul>
                 <br>
             </div>
         </div>
 
     </div>
-
+    <!--Footer-->
     <footer>
         <div class="footer">
             <div>
