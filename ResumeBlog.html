@@ -15,20 +15,19 @@
     <header class="navbar navbar-dark bg-dark">
         <div class="myself">
             <button type="button" onclick="displayAbout()">
-                <img src="Images/Profile photo.jpg" alt="Profile photo" width="50px"
-                    class="name profile img-fluid">
+                <img src="Images/Profile photo.jpg" alt="Profile photo" width="50px" class="name profile img-fluid">
             </button>
         </div>
-        <div class="dropDownButtons">
+        <div class="dropDownButtons" id="removeFocusEffect">
             <div class="dropDown">
-                <button type="button" onclick="academicButton()" class="dropButton btn btn-dark">Academic</button>
+                <button type="button" onclick="academicButton()" class="dropButton btn btn-dark bg-dark">Academic</button>
                 <div id="academic" class="dropContent">
                     <span><a onclick="displaySchool()" class="dropdown-item">School</a></span>
                     <span><a onclick="displayCollege()" class="dropdown-item">College</a></span>
                 </div>
             </div>
             <div class="dropDown">
-                <button type="button" onclick="skillButton()" class="dropButton btn btn-dark"
+                <button type="button" onclick="skillButton()" class="dropButton btn btn-dark bg-dark"
                     id="skillDrop">Skills</button>
                 <div id="skills" class="dropContent">
                     <span><a onclick="displaySkillWinScp()" class="dropdown-item">Win SCP</a></span>
@@ -40,15 +39,15 @@
                 </div>
             </div>
             <div class="dropDown">
-                <button type="button" onclick="experienceButton()" class="dropButton btn btn-dark"
+                <button type="button" onclick="experienceButton()" class="dropButton btn btn-dark bg-dark"
                     id="experienceDrop">Experience</button>
                 <div id="previousCompanies" class="dropContent">
                     <span><a onclick="displayCompanyTafe()" class="dropdown-item">TAFE</a></span>
                     <span><a onclick="displayCompanySrinSoft()" class="dropdown-item">SrinSoft</a></span>
                 </div>
             </div>
-            <button type="button" onclick="displayInterest()" class="btn btn-dark" id="interest">Interests</button>
-            <button type="button" onclick="displayProject()" class="btn btn-dark" id="project">Project</button>
+            <button type="button" onclick="displayInterest()" class="dropButton btn btn-dark bg-dark" id="interest">Interests</button>
+            <button type="button" onclick="displayProject()" class="dropButton btn btn-dark bg-dark" id="project">Project</button>
         </div>
     </header>
     <div>
@@ -68,8 +67,8 @@
                     to completed BE in 2013. I have completed BE/ECE in 2017.
                     Then I have joined in a company TAFE(Tractors and Farm Equipment limited).
                     This company is manufacturing tractors, parts, batteries, paints and
-                    store oil. I was joined as Project Assignee in Dealer Management System(DMS) for 1 year contract.
-                    After contract completed, i had completed courses in javaScript at FITA and also done
+                    store oil. I was joined as Project Assignee in Dealer Management System(DMS) for 1 year
+                    contract. After contract completed, i had completed courses in javaScript at FITA and also done
                     React course at Credo systemz. Then i have joined at SrinSoft Technologies as
                     Software Trainee. Their I was trained in synchronous, asynchronous JavaScript and React JS.
                     I have done some tasks in a project called TES-$-prising. Due to project unavailability I was
@@ -329,8 +328,9 @@
                         The negation pseudo-classes
                         <li>:not</li>
                     </ul>
-                    <table class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
-                    id="gpa">
+                    <table
+                        class="table table-hover table-striped table-bordered w-auto table-responsive{-sm|-md|-lg|-xl}"
+                        id="gpa">
                         <thead>
                             <tr>
                                 <th scope="col">Selector</th>
@@ -386,7 +386,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><code>:disabled</code></td>
+                                <td><code>:disabled</code>
+                                </td>
                                 <td>Matches user interface elements that are in an disabled state.</td>
                             </tr>
                             <tr>
@@ -1208,7 +1209,9 @@
         <div class="footer">
             <div>
                 <div class="footerHeading">Contact me</div>
-                <div>mail ID: ezekieljimlowell1995@gmail.com</div>
+                <div>mail ID: <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=ezekieljimlowell1995@gmail.com">ezekieljimlowell1995@gmail.com</a>
+                </div>
             </div>
         </div>
     </footer>

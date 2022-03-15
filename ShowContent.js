@@ -183,6 +183,10 @@ const displayInterest = () => {
     document.getElementsByClassName("project")[0].style.display = "none";
     document.getElementsByClassName("skills")[0].style.display = "none";
     document.getElementsByClassName("aboutMe")[0].style.display = "none";
+
+    document.getElementById("academic").classList.remove("show");
+    document.getElementById("skills").classList.remove("show");
+    document.getElementById("previousCompanies").classList.remove("show");
 }
 
 const displayProject = () => {
@@ -200,11 +204,10 @@ const displayProject = () => {
     document.getElementsByClassName("interest")[0].style.display = "none";
     document.getElementsByClassName("project")[0].style.display = "block";
     document.getElementsByClassName("aboutMe")[0].style.display = "none";
-}
 
-const displayAwards = () => {
-    document.getElementsByClassName("aboutMe")[0].style.display = "none";
-
+    document.getElementById("academic").classList.remove("show");
+    document.getElementById("skills").classList.remove("show");
+    document.getElementById("previousCompanies").classList.remove("show");
 }
 
 const displayAbout = () => {

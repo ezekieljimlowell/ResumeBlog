@@ -72,24 +72,39 @@ body {
 .college, .school, .winScp, .sap, .skillHtml,
 .skillCss, .javaScript, .reactJs, .tafe, .srinsoft, .interest, .project, .skills {
     display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#removeFocusEffect button {
+    outline: none;
+    box-shadow: none;
 }
 
 .content {
     margin-left: 20%;
     margin-right: 20%;
-    padding-left: 2%;
-    padding-right: 2%;
     /*background-color: rgb(106, 166, 168);*/
     /*background-color: azure;*/
     /*background-color: #8cabc5;*/
     margin-bottom: 200px;
     margin-top: 10px;
     z-index: 1000;
+    background: url("Images/Blue_balloons.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content .aboutMe {
     background: url("Images/Blue_balloons.jpg") no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 img {
@@ -126,6 +141,16 @@ img {
     font-weight: bold;
 }
 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover, .footer a:focus {
+    text-decoration: none;
+    color: white;
+}
+
 .watermark {
     width: 100%;
     height: 86%;
@@ -135,16 +160,9 @@ img {
 }
 
 @media screen and (max-width: 550px) {
-     .dropDownButtons {
-        max-height: 12.5rem;
-    }
-
     .dropDownButtons {
+        max-height: 12.5rem;
         flex-direction: column;
-    }
-
-    .watermark {
-        height: 100rem;
     }
 
     .content {
